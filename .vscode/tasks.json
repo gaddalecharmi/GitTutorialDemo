@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+    "label": "Build and Run C++",
+    "type": "shell",
+    "command": "copy C:\\c++\\hello.cpp C:\\c++\\jspwTest.cpp && g++ C:\\c++\\jspwTest.cpp -o C:\\c++\\jspwTest && C:\\c++\\jspwTest < C:\\c++\\input.txt > C:\\c++\\output.txt && del C:\\c++\\jspwTest.exe && del C:\\c++\\jspwTest.cpp",
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    },
+    "problemMatcher": ["$gcc"],
+    "detail": "Custom task for building and running C++"
+}
+  ]
+}
+
